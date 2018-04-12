@@ -1,0 +1,16 @@
+create table Booking (
+BookingNumber int NOT NULL,
+CustomerName varchar(25) NOT NULL,
+CustomerPhone int NOT NULL,
+UnitNumber varchar(5),
+StreetNumber int NOT NULL,
+Street varchar(25) NOT NULL,
+Suburb varchar(25) NOT NULL,
+Destination varchar(25) NOT NULL,
+PickUpDate Date,
+PickUpTime Time,
+Passengers int,
+CustomerStatus varchar(25),
+PRIMARY KEY (BookingNumber)
+	);
+

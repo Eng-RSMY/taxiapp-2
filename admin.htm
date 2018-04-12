@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="text/javascript" src="adminSearch.js"></script>
+  <title>CAB Online</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+	<div class="container">
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <a class="navbar-brand" href="booking.htm">CAB ONLINE</a>
+			</div> 
+		  </div>
+		</nav>
+	</div>
+	<div class="container">
+		<div class="well well-lg ">
+			 <form>
+			  <div class="form-group">
+				<label for="address">Pick Up Requests</label>
+				<br>
+				<button type="button" class="btn btn-default" onclick="sendToServer('')">Search Pick Up Requests</button>
+			  </div>
+			  <div class="form-group">
+				<label for="address">Assign a Driver:</label>
+				<input type="text" class="form-control" id="bookingref" placeholder="Booking reference..">
+				<br>
+				<button type="button" class="btn btn-warning" onclick="searchBooking()">Assign Taxi</button>
+			  </div>
+			</form> 
+		</div>
+	</div>
+	<div class="container">
+		<div id ="status">
+		</div>
+	</div>
+</body>
+</html> 
